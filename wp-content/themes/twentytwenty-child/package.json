@@ -1,0 +1,22 @@
+{
+  "name": "twentytwenty-child",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^26.1.0"
+  },
+  "dependencies": {
+    "@wordpress/components": "^23.7.0",
+    "@wordpress/data": "^9.0.0",
+    "@wordpress/edit-post": "^7.7.0",
+    "@wordpress/i18n": "^4.30.0",
+    "@wordpress/plugins": "^5.7.0"
+  }
+}
