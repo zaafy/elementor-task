@@ -1,0 +1,1 @@
+import './awp-custom-postmeta-register';
