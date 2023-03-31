@@ -57,3 +57,7 @@ function emt_products_by_category(WP_REST_Request $request) {
 
     return $output;
 }
+
+// sample usage:
+// http://elementor-task.local/wp-json/emt_task/v1/category/3
+// http://elementor-task.local/wp-json/emt_task/v1/category/category1
