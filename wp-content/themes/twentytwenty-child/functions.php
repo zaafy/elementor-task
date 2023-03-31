@@ -120,3 +120,6 @@ add_action( 'enqueue_block_editor_assets', function(){
 
 // include custom fields
 include( 'includes/fields.php' );
+
+// include shortcodes
+include( 'includes/shortcodes.php' );
