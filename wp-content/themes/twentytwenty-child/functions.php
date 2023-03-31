@@ -1,8 +1,8 @@
 <?php
 // Load styles of both parent and child themes
-add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'emt_enqueue_styles' );
 
-function my_theme_enqueue_styles() {
+function emt_enqueue_styles() {
 	$parenthandle = 'twentytwenty-style';
 	$theme = wp_get_theme();
 	wp_enqueue_style( $parenthandle,
@@ -12,6 +12,10 @@ function my_theme_enqueue_styles() {
 	wp_enqueue_style( 'child-style',
 		get_stylesheet_uri(),
 		array( $parenthandle )
+	);
+	wp_enqueue_style( 'child-style-products',
+		get_stylesheet_directory_uri() . '/css/styles.css',
+		[]
 	);
 }
 

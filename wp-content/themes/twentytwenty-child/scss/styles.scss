@@ -1,0 +1,16 @@
+$green: #228833;
+$red: #cd2653;
+$white: #ffffff;
+$black: #000000;
+
+@import "mixins";
+@import "product-loop";
+@import "single-product";
+@import "related-products";
+
+.emt-container {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
