@@ -22,6 +22,8 @@ function emt_product_shortcode_func( $args ) {
     set_query_var('emt_product_id', false);
     set_query_var('emt_product_bgc', false);
 
+    $output = apply_filters('emt_product_output', $output);
+
 	return $output;
 }
 add_shortcode( 'emt_product', 'emt_product_shortcode_func' );

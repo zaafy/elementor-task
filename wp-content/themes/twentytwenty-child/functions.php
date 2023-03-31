@@ -123,3 +123,17 @@ include( 'includes/fields.php' );
 
 // include shortcodes
 include( 'includes/shortcodes.php' );
+
+// Usage of filter to change output of emt_product shortcode
+// add_filter('emt_product_output', 'change_emt_product_output');
+
+// function change_emt_product_output($output) {
+// 	$output = 'Lorem ipsum dolor sit amet';
+// 	return $output;
+// }
+
+// add color-theme meta tag to wp_head
+add_action('wp_head', 'emt_change_mobile_color_theme');
+function emt_change_mobile_color_theme() {
+	echo '<meta name="theme-color" content="#ff6600" />';
+}
