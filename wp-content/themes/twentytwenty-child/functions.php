@@ -137,3 +137,6 @@ add_action('wp_head', 'emt_change_mobile_color_theme');
 function emt_change_mobile_color_theme() {
 	echo '<meta name="theme-color" content="#ff6600" />';
 }
+
+// include api code
+include( 'includes/api.php' );
