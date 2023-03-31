@@ -38,7 +38,7 @@ const AWP_Custom_Plugin = ( { postType, postMeta, setPostMeta } ) => {
 			</PanelRow>
 			<PanelRow>
 				<TextControl
-					label={ __( 'YouTube video link', 'emt_task_domain' ) }
+					label={ __( 'YouTube video ID', 'emt_task_domain' ) }
 					value={ postMeta._youtube_video }
 					onChange={ ( value ) => setPostMeta( { _youtube_video: value } ) }
 				/>
